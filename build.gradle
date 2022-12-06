@@ -1,11 +1,13 @@
 plugins {
-    id 'org.springframework.boot' version '2.4.4'
+    id 'org.springframework.boot' version '2.1.7.RELEASE'
     id 'java'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 }
 
 group 'org.example'
 version '1.0-SNAPSHOT'
+
+sourceCompatibility = '1.8'
 
 // 각종 의존성(라이브러리)들을 어떤 원격 저장소에서 받을지를 정한다.
 repositories {
@@ -15,12 +17,18 @@ repositories {
 
 // 인텔리제이는 메이븐 저장소의 데이터를 인덱싱해서 관리하기 때문에 커뮤니티 버전을 사용해도 의존성 자동완성이 가능하다.
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testImplementation 'junit:junit:4.13.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+//    classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+//    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.6.1'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:4.12'
+//    testRuntimeOnly 'org.junit.platform:junit-platform-commons:1.7.1'
+
 }
+
+
 
 test {
     useJUnitPlatform()
