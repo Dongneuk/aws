@@ -7,4 +7,5 @@
 .gradle
 .idea
 
-
+# 보안을 위해 이 파일은 깃에 올리지 않는다.
+application-oauth.properties
