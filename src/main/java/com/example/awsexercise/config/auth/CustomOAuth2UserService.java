@@ -1,6 +1,7 @@
 package com.example.awsexercise.config.auth;
 
 import com.example.awsexercise.config.auth.dto.OAuthAttributes;
+import com.example.awsexercise.config.auth.dto.SessionUser;
 import com.example.awsexercise.domain.user.User;
 import com.example.awsexercise.domain.user.UserRepository;
 import lombok.RequiredArgsConstructor;
